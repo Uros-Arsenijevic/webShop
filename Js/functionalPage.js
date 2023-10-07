@@ -4,6 +4,15 @@ $(".mobile-menu").click(() => {
     $(".content").slideToggle();
 });
 
+
+// login bar
+$(".desktop-menu li:first-child").click(() => {
+    $(".login-form").toggle();
+});
+$(".btn").click(() => {
+    $(".login-form").toggle();
+});
+
 // slider
 let imageWidth = 0;
 
