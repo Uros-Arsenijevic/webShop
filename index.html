@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" defer></script>
+    <script src="Js/all.min.js" defer></script>
+    <script src="Js/script.js" defer></script>
+    <script src="Js/functionalPage.js" defer></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:wght@700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-form">
+        <div class="form">
+            <h2>LogIn</h2>
+            <form action="#">
+                <label>
+                    Username:
+                    <input type="text">
+                </label>
+                <label>
+                    password
+                    <input type="password">
+                </label>
+                <input type="submit" value="LogIn">
+            </form>
+        </div>
+        <div class="background"></div>
+    </div>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="index.html"><img src="https://www.freepnglogos.com/uploads/orange-mobile-logo-png-14.png" alt="Logo" class="logo"></a></li>
+            </ol>
+            <ol class="desktop-menu">
+                <li><div class="nav-Btn"><i class="fa-solid fa-user"></i><span>Prijava</span></div></li>
+                <li><div class="nav-Btn"><i class="fa-solid fa-cart-shopping"></i><span>Korpa</span></div></li>
+                <li><div class="nav-Btn"><i class="fa-solid fa-heart"></i><span>Omiljeni</span></div></li>
+                <li><button class="buy-Button animate__animated"><i class="fa-solid fa-credit-card"></i><span>Kupi</span></button></li>
+            </ol>
+            <ol class="mobile-menu">
+                <li><i class="fa-solid fa-bars"></i></li>
+            </ol>
+        </nav>
+        <div class="menu">
+            <div class="content">
+                    <li><div class="nav-Btn"><i class="fa-solid fa-user"></i><span>Prijava</span></div></li>
+                    <li><div class="nav-Btn"><i class="fa-solid fa-cart-shopping"></i><span>Korpa</span></div></li>
+                    <li><div class="nav-Btn"><i class="fa-solid fa-heart"></i><span>Omiljeni</span></div></li>
+                    <li><div class="nav-Btn"><i class="fa-solid fa-credit-card"></i><span>Kupi</span></div></li>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="title">Telefoni</h2>
+
+    <div class="products">
+
+        <div class="mobile">
+            <div class="add-favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="main.html?id=1">
+                <img src="https://img.gigatron.rs/img/products/large/image6486f9c1e1e44.jpg" alt="" id="image">
+            </a>
+            <div class="mobile-name">
+                <h2>XIAOMI Redmi 12C 3/64GB Black</h2>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+                <div class="full-price">Price: <span>125&dollar;</span></div>
+                <a href="main.html?id=1">
+                    <div class="buy-Btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile">
+            <div class="add-favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="main.html?id=2">
+                <img src="https://img.gigatron.rs/img/products/large/image644110165e37a.jpg" alt="" id="image">
+            </a>
+            <div class="mobile-name">
+                <h2>HONOR X7a 4/128GB Midnight Black</h2>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="price">
+                <div class="full-price">Price: <span>162&dollar;</span></div>
+                <a href="main.html?id=2">
+                    <div class="buy-Btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                </a>
+            </div>
+        </div> 
+        
+        <div class="mobile">
+            <div class="add-favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="main.html?id=3">
+                <img src="https://img.gigatron.rs/img/products/large/image6409d017633fd.jpg" alt="" id="image">
+            </a>
+            <div class="mobile-name">
+                <h2>APPLE iPhone 14 Plus 6/256GB Yellow MR6D3SX/A</h2>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+                <div class="full-price">Price: <span>1184&dollar;</span></div>
+                <a href="main.html?id=3">
+                    <div class="buy-Btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mobile">
+            <div class="add-favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="main.html?id=4">
+                <img src="https://img.gigatron.rs/img/products/large/image64466615905cf.jpg" alt="" id="image">
+            </a>
+            <div class="mobile-name">
+                <h2>NOKIA G11 Plus 4/64GB Blue</h2>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+                <div class="full-price">Price: <span>732&dollar;</span></div>
+                <a href="main.html?id=4">
+                    <div class="buy-Btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile">
+            <div class="add-favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="main.html?id=5">
+                <img src="https://img.gigatron.rs/img/products/large/image634035a007d1e.png" alt="" id="image">
+            </a>
+            <div class="mobile-name">
+                <h2>NOKIA 5710 XA Black</h2>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="price">
+                <div class="full-price">Price: <span>99&dollar;</span></div>
+                <a href="main.html?id=5">
+                    <div class="buy-Btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="add-favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="main.html?id=6">
+                <img src="https://img.gigatron.rs/img/products/large/image6477499d1ee85.jpg" alt="" id="image">
+            </a>
+            <div class="mobile-name">
+                <h2>OUKITEL WP20 4/32GB Tropical Orange</h2>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+                <div class="full-price">Price: <span>400&dollar;</span></div>
+                <a href="main.html?id=6">
+                    <div class="buy-Btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="add-favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="main.html?id=7">
+                <img src="https://img.gigatron.rs/img/products/large/image6412ee2d93224.jpg" alt="" id="image">
+            </a>
+            <div class="mobile-name">
+                <h2>SAMSUNG Galaxy A14 4/128GB Green</h2>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+                <div class="full-price">Price: <span>250&dollar;</span></div>
+                <a href="main.html?id=7">
+                    <div class="buy-Btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile">
+            <div class="add-favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="main.html?id=8">
+                <img src="https://img.gigatron.rs/img/products/large/image646dc5df14177.jpg" alt="" id="image">
+            </a>
+            <div class="mobile-name">
+                <h2>HONOR Magic5 PRO 12/512GB Black</h2>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+                <div class="full-price">Price: <span>100&dollar;</span></div>
+                <a href="main.html?id=8">
+                    <div class="buy-Btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="left-Btn fa-beat">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="slider-img">
+            <div class="slider-track">
+                <img src="https://img.gigatron.rs/img/news/pages/Custommob_898.jpg" alt="img1">
+                <img src="https://images.samsung.com/is/image/samsung/my-feature----183199471?$FB_TYPE_I_JPG$" alt="">
+                <img src="https://www.corning.com/microsites/csm/gorillaglass/Sony/CGG_d4A_SonyXperia5iv.jpg.transform/tablet-768/img.jpg" alt="">
+                <img src="https://www.cnet.com/a/img/resize/0302d07e10ba8dc211f7b4e25891ad46dda31976/hub/2023/02/05/f52fdc98-dafc-4d05-b20e-8bd936b49a53/oneplus-11-review-cnet-lanxon-promo-8.jpg?auto=webp&fit=crop&height=675&width=1200" alt="">
+            </div>
+        </div>
+        <div class="right-Btn fa-beat">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-text">
+            © 2023 mobile.com All Rights Reserved
+        </div>
+    </footer>
+    <!-- <a href="main.html?id=1">
+        <img src="https://img.gigatron.rs/img/products/large/image6486f9c1e1e44.jpg" alt="" id="image"></a> 
+        <h2 id="naslov">nokia</h2>
+    <a href="main.html?id=2">
+        <img src="https://img.gigatron.rs/img/products/large/image644110165e37a.jpg" alt="">
+    </a>
+    <h2>Honor</h2> -->
+
+</body>
+</html>
