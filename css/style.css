@@ -340,6 +340,7 @@ form{
 }
 .fa-arrow-right,.fa-arrow-left{
     font-size: 20px;
+    color: #262626;
 }
 .left-Btn:hover, .right-Btn:hover{
     background-color: #FC7300;

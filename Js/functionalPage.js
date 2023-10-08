@@ -6,7 +6,7 @@ $(".mobile-menu").click(() => {
 
 
 // login bar
-$(".desktop-menu li:first-child").click(() => {
+$(".login-btn").click(() => {
     $(".login-form").toggle();
 });
 $(".btn").click(() => {
@@ -20,7 +20,7 @@ $(".right-Btn").on("click", () => {
     imageWidth += 700;
     if(imageWidth === 2800){
         imageWidth = 0;
-    }
+    };
     $(".slider-track").css("transform", `translateX(-${imageWidth}px`);
 });
 
@@ -38,5 +38,28 @@ setInterval(() => {
         imageWidth = 0;
     }
     $(".slider-track").css("transform", `translateX(-${imageWidth}px`);
-}, 5000)
+}, 5000);
 
+
+// user login 
+$(".submitButton").click(() => { 
+    let username = $(".username").val();
+    let password = $(".password").val();
+
+    if(username.length > 0 && password.length > 0){
+
+        let userInfo = {
+            username: username,
+            password: password,
+        }
+
+        let JsonFormat = JSON.stringify(userInfo);
+        localStorage.setItem("user",JsonFormat);
+
+        $(".message").html("Uspesno ste se ulogovali")
+                     .css("color", "#03C988");
+    }else{
+        console.log("neradi")
+    }
+
+});
