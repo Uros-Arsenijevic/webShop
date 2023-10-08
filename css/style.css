@@ -144,7 +144,7 @@ li .buy-Button:hover{
 .form h2{
     font-size: 30px;
     font-family: GT Walsheim Pro;
-    color: var(--text-color);
+    color: #feab3a;
 }
 label{
     display: flex;
@@ -199,10 +199,6 @@ form{
     margin-top: 5px;
 }
 
-.submitButton:hover{
-    color: #f7f7f7;
-    background-color: #FC7300;
-}
 .background{
     position: absolute;
     top: 0;
@@ -282,11 +278,6 @@ form{
     cursor: pointer;
     transition: 0.3s;
     color: #000;
-}
-.buy-Btn:hover{
-    background-color: #e69304;
-    width: 60px;
-    height: 60px;
 }
 .full-price{
     font-size: 25px;
