@@ -58,7 +58,7 @@ let product = [
         naslov: 'HONOR Magic5 PRO 12/512GB Black',
         price: 100,
     },  
-]
+];
 
 product.forEach(element => {
     if(+token === element.id){

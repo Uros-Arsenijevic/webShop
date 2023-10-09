@@ -1,4 +1,3 @@
-@import url(queries.css);
 @font-face {
     font-family: GT Walsheim Pro;
     src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),url(GTWalsheimProRegular.woff2) format("woff2"),url(GTWalsheimProRegular.woff) format("woff"),url(GTWalsheimProRegular.ttf) format("truetype");

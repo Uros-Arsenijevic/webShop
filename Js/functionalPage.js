@@ -4,8 +4,9 @@ $(".mobile-menu").click(() => {
     $(".content").slideToggle();
 });
 
-// adding class for hover effect on buy-button
-$(".buy-Btn").addClass("bttn-jelly bttn-md")
+// adding class for effect on button
+$(".buy-Btn").addClass("bttn-jelly bttn-md");
+$(".add-favorite-btn").addClass("animate__animated");
 
 // login bar
 $(".login-btn").click(() => {
@@ -17,6 +18,18 @@ $(".btn").click(() => {
     $(".message").html("");
 
     stateOfForm("normal");
+});
+
+// add in favorite button
+$(".add-favorite-btn").click(function() {
+
+    if($(this).hasClass("animate__bounceIn")){
+        $(this).removeClass("animate__bounceIn")
+                .html(` <i class="fa-regular fa-heart"></i>`);
+    }else{
+        $(this).addClass("animate__bounceIn")
+            .html(`<i class="fa-solid fa-heart" style="color: #feab3a"></i>`)
+    };
 });
 
 // slider
@@ -48,8 +61,6 @@ setInterval(() => {
 
 
 // user login 
-
-
 $(".submitButton").click(() => { 
     let username = $(".username").val();
     let password = $(".password").val();
@@ -59,7 +70,7 @@ $(".submitButton").click(() => {
         let userInfo = {
             username: username,
             password: password,
-        }
+        };
 
         let JsonFormat = JSON.stringify(userInfo);
         localStorage.setItem("user",JsonFormat);
