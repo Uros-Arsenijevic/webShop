@@ -19,17 +19,30 @@ $(".btn").click(() => {
 
     stateOfForm("normal");
 });
-
+let arrayid = [];
 // add in favorite button
 $(".add-favorite-btn").click(function() {
+    let elementID = $(this).attr('id');
 
     if($(this).hasClass("animate__bounceIn")){
         $(this).removeClass("animate__bounceIn")
                 .html(` <i class="fa-regular fa-heart"></i>`);
+
+        // pronalazimo index od id-a koji zelimo da uklonimo
+        let findElement = arrayid.findIndex(element => element === elementID)
+        // uklanjanje id-a na osnovu njegovog indexa                   
+        arrayid.splice(findElement, 1);
+
     }else{
         $(this).addClass("animate__bounceIn")
             .html(`<i class="fa-solid fa-heart" style="color: #feab3a"></i>`)
+
+        // dodavanje u array id
+        arrayid.push(elementID)
     };
+    // dodavanje elementa u localstorage
+    let arrayIDJson = JSON.stringify(arrayid);
+    localStorage.setItem("ProductID", arrayIDJson);
 });
 
 // slider

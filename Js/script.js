@@ -1,11 +1,3 @@
-
-/*
-let img = document.querySelector("#image")
-let button = document.querySelector("button")
-
-// let linkOdImg = img.getAttribute("src");
-*/
-// let img2 = document.querySelector("#img2");
 let params = (new URL(document.location)).searchParams; 
 let token = params.get("id");
 
@@ -60,12 +52,55 @@ let product = [
     },  
 ];
 
+
 product.forEach(element => {
     if(+token === element.id){
         let img2 = document.querySelector("#img2");
         let naslov = document.querySelector(".naslov2");
-
+        
         img2.src = element.img; 
         naslov.innerText = element.naslov;
     }
 })
+
+let addInFavoriteBtns = document.querySelectorAll(".add-favorite-btn");
+let favoriteItem = document.querySelector('#favoriteElement');
+
+for (const i in addInFavoriteBtns) {
+    // dodavanje id-a na sve addfavorite btn
+    addInFavoriteBtns[i].id = +i + 1;
+    
+    addInFavoriteBtns[i].onclick = () => {
+        setTimeout(() => {
+            let favoriteItemId = localStorage.getItem("ProductID");
+            favoriteItemId = JSON.parse(favoriteItemId);
+            
+            favoriteItemId.forEach(singleId => {
+                if(product[i].id === +singleId){
+
+                    fetch('html/cardAndFavorite.html')
+
+                    .then(response => response.text())
+                    .then(html => {
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, 'text/html');
+                        const element = doc.querySelector(".favoriteElement");
+
+                        if (element) {
+                            element.innerText = product[i].naslov
+                            console.log(element)
+                        } else {
+                            console.log("element ne postoji")
+                        }
+                    
+                    })
+                    .catch(error => {
+                        console.error('Greška pri preuzimanju drugog dokumenta:', error);
+                      });
+                };
+            });
+
+        }, 100);
+    };
+
+};
