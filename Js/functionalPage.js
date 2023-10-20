@@ -1,3 +1,7 @@
+// preventDefold form
+$("form").submit(function (e) { 
+    e.preventDefault();
+});
 // menu
 $(".content").hide();
 $(".mobile-menu").click(() => { 

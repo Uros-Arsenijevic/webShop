@@ -3,12 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title class="namephone">Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/single-product.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Eo_circle_orange_letter-m.svg/1200px-Eo_circle_orange_letter-m.svg.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" defer></script>
+    <script src="Js/all.min.js" defer></script>
     <script src="Js/script.js" defer></script>
+    <script src="Js/singel-product.js" defer></script>
 </head>
 <body>
-    
-    <img src="" alt="" id="img2">
-    <h2 class="naslov2"></h2>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="index.html"><img src="https://static.skyassets.com/contentstack/assets/bltdc2476c7b6b194dd/blt439fb302f84d1c4f/5f352407327a6201d7ebb769/Sky_Mobile_PRIMARY_RGB.png" alt="Logo" class="logo"></a></li>
+            </ol>
+            <ol class="desktop-menu">
+                <a href="index.html">
+                    <li><div class="nav-Btn login-btn"><i class="fa-solid fa-reply-all"></i><span>Svi prizvodi</span></div></li>
+                </a>
+                <a href="html/cardAndFavorite.html?cart">
+                    <li><div class="nav-Btn"><i class="fa-solid fa-cart-shopping"></i><span>Korpa</span></div></li>
+                </a>
+                <a href="html/cardAndFavorite.html?favorite">
+                    <li><div class="nav-Btn"><i class="fa-solid fa-heart"></i><span>Omiljeni</span></div></li>
+                </a>
+            </ol>
+            <ol class="mobile-menu">
+                <li><i class="fa-solid fa-bars"></i></li>
+            </ol>
+        </nav>
+        <div class="menu">
+            <div class="content">
+                    <li><div class="nav-Btn login-btn"><i class="fa-solid fa-user"></i><span>Prijava</span></div></li>
+                    <li><div class="nav-Btn"><i class="fa-solid fa-cart-shopping"></i><span>Korpa</span></div></li>
+                    <li><div class="nav-Btn"><i class="fa-solid fa-heart"></i><span>Omiljeni</span></div></li>
+                    <li><div class="nav-Btn"><i class="fa-solid fa-credit-card"></i><span>Kupi</span></div></li>
+            </div>
+        </div>
+    </header>
+    <div class="product">
+        <div class="product-slider-img">
+            <div class="leftBtn"><i class="fa-solid fa-angles-left"></i></div>
+            <div class="product-img">
+                <div class="product-img-track">
+                    <div class="track"></div>
+                </div>
+            </div>
+            <div class="rightBtn"><i class="fa-solid fa-angles-right"></i></div>
+        </div>
+
+        <div class="functional-bar">
+            <div class="procduct-name">
+                <h2 class="naslov2"></h2>
+            </div>
+            <div class="single-product-price">
+                <h3 class="product-price"></h3>
+            </div>
+            <div class="quantityOfPieces">
+                <input type="number" min="0" name="quantityOfPieces" id="">
+            </div>           
+            <button>Kupi</button>
+        </div>
+    </div>
 </body>
 </html>

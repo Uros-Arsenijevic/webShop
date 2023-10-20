@@ -1,0 +1,48 @@
+body{
+    background-color: white !important;
+}
+.fa-circle-user{
+    font-size: 30px;
+}
+.product-slider-img{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.fa-angles-left,.fa-angles-right{
+    cursor: pointer;
+    font-size: 20px;
+}
+.product {
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product-img-track{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.track{
+    display: flex;
+    transition: 0.2s ease-in-out;
+}
+.product-img img {
+    max-width: 500px;
+    width: 100%;
+}
+.fa-angles-left:hover, .fa-angles-right:hover{
+    color: #FC7300;
+}
+.functional-bar {
+}
+.procduct-name {
+}
+.naslov2 {
+}
+.single-product-price {
+}
+.product-price {
+}
+
