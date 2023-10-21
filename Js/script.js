@@ -1,6 +1,7 @@
 let params = (new URL(document.location)).searchParams; 
 let token = params.get("id");
 
+// proizvodi
 let product = [
     {   
         id: 1, 
@@ -76,12 +77,13 @@ let product = [
 product.forEach(element => {
     if(+token === element.id){
         let productImgTrack = document.querySelector(".track");
+        let smallPictures = document.querySelector(".small-pictures");
+
         let naslov = document.querySelector(".naslov2");
         let pageName = document.querySelector(".namephone");
         let productPrice = document.querySelector(".product-price")
 
         for(let i = 0; i < 5; i++){
-
             // kreiranje img tagova za slike odvojenog proizvoda
             let createImgElement = document.createElement("img");
 

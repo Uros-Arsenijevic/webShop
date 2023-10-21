@@ -1,6 +1,10 @@
 body{
     background-color: white !important;
 }
+*::selection{
+    background-color: #243763 !important;
+    color: #FC7300 !important;
+}
 .fa-circle-user{
     font-size: 30px;
 }
@@ -18,6 +22,8 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
 }
 .product-img-track{
     width: 500px;
@@ -36,13 +42,73 @@ body{
     color: #FC7300;
 }
 .functional-bar {
+    font-family: Lato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 .procduct-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.procduct-name p {
+    text-align: center;
+    color: #243763;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    font-family: GT Walsheim Pro;
+    font-weight: 700;
 }
 .naslov2 {
-}
-.single-product-price {
+    font-size: 25px;
+    color: #243763;
+    font-weight: bold;
 }
 .product-price {
+    font-family: GT Walsheim Pro;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgb(254, 171, 58);
+}
+.functional-bar button{
+    max-width: 200px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 2px #fff;
+    background: none;
+    font-size: 15px;
+    font-family: GT Walsheim Pro;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
+.quantityOfPieces {
+}
+.quantityOfProducts {
+    display: flex;
+    width: 120px;
+    height: 40px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #243763;
+    transition: 0.3s;
+    border: 1px solid #243763;
+}
+.plus:hover, .minus:hover {
+    color: #FC7300;
+}
+.minus, .plus {
+    cursor: pointer;
+}
+.functional-bar span{
+    color: rgb(40, 183, 141);
+}
